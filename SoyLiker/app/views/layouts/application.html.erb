@@ -8,6 +8,27 @@
 </head>
 <body>
 
+
+
+<div class= "row">
+      <div class= "container">
+        <ul class="nav navbar-nav navbar-right">
+          <% if user_signed_in? %>
+            <li>
+              <p>Bienvenid@ <%= current_client.name_complet%></p>
+            <%= link_to('Cerrar sesión', destroy_user_session_path, :method => :delete) %>        
+            </li>
+          <% else %>
+            <li>
+            <%= link_to('Iniciar sesión', new_user_session_path)%>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+
+
 <%= yield %>
 
 </body>
