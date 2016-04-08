@@ -10,11 +10,12 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require active_admin
- *= require animate.min
- *= require bootstrap
+
+ 
  *= require bootstrap_and_overrides
- *= require creative
  *= require home
+ *= require bootstrap
+ *= require creative
+ *= require animate.min
  *= require_self
  */

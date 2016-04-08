@@ -16,7 +16,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: #00F5E5;
     border-width: 3px;
 }
 
@@ -87,6 +87,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
+    text-decoration:none;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     color: #f05f40;
@@ -95,6 +96,7 @@ aside {
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
     color: #eb3812;
+    text-decoration:none;
 }
 
 .navbar-default .nav > li>a,
@@ -103,23 +105,28 @@ aside {
     font-size: 13px;
     font-weight: 700;
     color: #222;
+    text-decoration:none;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
     color: #f05f40;
+    text-decoration:none;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
     color: #f05f40!important;
     background-color: transparent;
+
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
+
+
 
 @media(min-width:768px) {
     .navbar-default {
@@ -178,7 +185,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(header.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(header1.jpg);
+   /* background-image: url(header1.jpg); */
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -387,7 +395,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
     border-color: #f05f40;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #00a7c4;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -400,8 +408,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
     border-color: #ed431f;
-    color: #fff;
-    background-color: #ee4b28;
+    color: #00a7c4;
+    background-color: #00F5E5;
 }
 
 .btn-primary:active,
