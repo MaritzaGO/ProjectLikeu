@@ -25,7 +25,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: white;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -33,7 +33,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #00F5E5;
 }
 
 h1,
@@ -126,8 +126,6 @@ aside {
     background-color: transparent;
 }
 
-
-
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
@@ -179,6 +177,31 @@ aside {
     }
 }
 
+.login{
+
+    position: relative;
+    width: 100%;
+    background-image: url(login.jpg);
+    
+    }
+
+.contenedorlogin{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    max-width: 60%;
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.contenedorlogin .campo{
+    color: black;
+}
+
+
+
 header {
     position: relative;
     width: 100%;
@@ -223,6 +246,7 @@ header .header-content .header-content-inner p {
     header {
         min-height: 100%;
     }
+
 
     header .header-content {
         position: absolute;
