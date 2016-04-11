@@ -27,6 +27,11 @@ gem 'devise', '~> 3.2'
 
 gem 'carrierwave'
 
+
+
+#gema para animaciones de jquery
+gem 'jquery-easing-rails'
+
 #Estilo del trabajo
 gem "twitter-bootstrap-rails"
 
