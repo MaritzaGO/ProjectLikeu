@@ -1,137 +1,151 @@
-<h2>Registro de usuario</h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<section class= "registro">
 
 
-        <div class="field">
-          <%= f.label :username, '¿Queremos saber cuál es tu nombre?' %><br />
-          <%= f.text_field :username%>
-        </div>
-
-        <div class="field">
-          <%= f.label :birthdate, 'Tu fecha de nacimiento' %><br/>
-          <%= date_select :birthday, "birthday",start_year: 1920, end_year: 2016,class: "form-control" %>
-        </div>
-
-        <div class="field">
-          <%= f.label :gender, '¿Cuál es tu género?' %><br />
-          <%= f.text_field :gender %>
-        </div>
-
-        <div class="field">
-          <%= f.label :ocupation, '¿Actualmente a qué te dedicas?' %><br />
-          <%= f.text_field :ocupation %>
-        </div>
-
-        <div class="field">
-          <%= f.label :looking_for_employee, '¿Qué estás buscando trabajador?' %><br />
-          <%= f.text_field :looking_for_employee %>
-        </div>
-
-        <div class="field">
-          <%= f.label :looking_for_independent, '¿Qué estás buscando independiente?' %><br />
-          <%= f.text_field :looking_for_independent %>
-        </div>
-
-        <div class="field">
-          <%= f.label :experience, '¿Cuéntanos sobre tu experiencia trabajador?' %><br />
-          <%= f.text_field :experience %>
-        </div>
-
-        <div class="field">
-          <%= f.label :would_work, '¿Cómo te gustaría trabajar?' %><br />
-          <%= f.text_field :would_work %>
-        </div>
-
-         <div class="field">
-          <%= f.label :jobs_made, '¿Qué tipo de trabajos has realizado?' %><br/>
-          <%= f.text_field :jobs_made %>
-        </div>
-
-         <div class="field">
-         <p>Queremos contactarnos contigo</p> <br/>
-          <%= f.label :phone_contact, 'Celular' %><br/>
-          <%= f.text_field :phone_contact %>
-        </div>
-
-        <div class="field">
-          <%= f.label :email, 'Correo electrónico' %><br/>
-          <%= f.email_field :email, autofocus: true %>
-        </div>
-
-         <div class="field">
-         <p>Un liker trabaja desde donde quiere, queremos saber cómo es ese lugar</p><br/>
-          <%= f.label :type_computer, '¿Qué tipo de computador tienes?' %><br />
-          <%= f.text_field :type_computer %>
-        </div>
-
-         <div class="field">
-          <%= f.label :use_computer, '¿Quién usa el equipo normalmente?' %><br />
-          <%= f.text_field :use_computer %>
-        </div>
-
-          <div class="field">
-          <%= f.label :connection_internet, 'Tu conexión de internet es de' %><br />
-          <%= f.text_field :connection_internet %>
-          </div>
-
-        <div class="field">
-          <%= f.label :computer_accessories, '¿Puedes hablar desde tu computador?' %><br />
-          <%= f.text_field :computer_accessories %>
-        </div>
-
-        <div class="field">
-        <p>Ahora imagina por un momento que estás trabajando desde el lugar que elegiste.</p><br />
-
-          <%= f.label :comfort, '¿Qué tan cómodo crees que sería para trabajar, entendiendo que debes hablar con personas a través de tu computador? (Ten en cuenta el entorno, las distracciones, el riudo, la temperatura, las interrupciones, etc).' %><br />
-          <%= f.text_field :comfort%>
-        </div>
-
-        <div class="field">
-          <%= f.label :being, '¿Cómo eres?' %><br />
-          <p> Sé honesto contigo, hay cosas de ti que a lo mejor no te habías cuestionado. Recuerda que no hay respuestas correctas ni equivocadas, sólo queremos conocerte lo mejor posible para encontrar la mejor forma de trabajar juntos.</p><br/>
-          <%= f.text_field :being%>
-        </div>
-
-        <div class="field">
-          <%= f.label :do, '¿Cómo te gusta hacer las cosas?' %><br />
-          <p> Sé honesto contigo, hay cosas de ti que a lo mejor no te habías cuestionado. Recuerda que no hay respuestas correctas ni equivocadas, sólo queremos conocerte lo mejor posible para encontrar la mejor forma de trabajar juntos.</p><br/>
-          <span>Arrastra el botón dependiendo de lo inclinado que te sientas por cada concepto.
-          Si crees que estás en un punto medio, puedes dejar el botón en el medio
-          o arrastrarlo solo un poco hacia donde prefieras.</span><br/>
-          <%= f.text_field :do%>
-        </div>
-
-        <div class="field">
-          <%= f.label :motivation, 'El podio de lo que más te motiva'%><br />
-          <span>Califica sólo los tres factores que más te importan de la siguiente lista, dándole el número 1 al que más te motiva.</span><br/>
-          <%= f.text_field :motivation%>
-        </div>
+<div class="container text-center">
+  <div class="row">
 
 
-        <div class="field">
-          <%= f.label :avatar, 'Adjuntar foto de perfil'%><br/>
-          <%= f.file_field :avatar %>
-        </div>
+        <h2>Registro de usuario</h2>
+
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
 
 
-        <div class="field">
-          <%= f.label :password %>
-          <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em>
-          <% end %><br />
-          <%= f.password_field :password, autocomplete: "off" %>
-        </div>
+                <div class="field">
+                  <%= f.label :username, '¿Queremos saber cuál es tu nombre?' %><br />
+                  <%= f.text_field :username%>
+                </div>
 
-        <div class="field">
-          <%= f.label :password_confirmation %><br />
-          <%= f.password_field :password_confirmation, autocomplete: "off" %>
-        </div>
+                <div class="field">
+                  <%= f.label :birthdate, 'Tu fecha de nacimiento' %><br/>
+                  <%= date_select :birthday, "birthday",start_year: 1920, end_year: 2016,class: "form-control" %>
+                </div>
 
-        <div class="actions">
-          <%= f.submit "Enviar registro" %>
-        </div>
-      <% end %>
+                <div class="field">
+                <%= label_tag :sex_sel, '¿Cuál es tu género?' %><br />
+                <form action="demo_form.asp" method="get">
+                    <input type="radio" name="sexo" value="Masculino"> Masculino<input type="radio" name="sexo"value="Femenino" checked> Femenino<br>
+                </form>
+              
+                </div>
 
-      <%= render "devise/shared/links" %>
+                <div class="field">
+                  <%= f.label :ocupation, '¿Actualmente a qué te dedicas?' %><br />
+                  <%= f.text_field :ocupation %>
+                </div>
+
+                <div class="field">
+                  <%= f.label :looking_for_employee, '¿Qué estás buscando como trabajador?' %><br />
+                  <%= f.text_field :looking_for_employee %>
+                </div>
+
+                <div class="field">
+                  <%= f.label :looking_for_independent, '¿Qué estás buscando como independiente?' %><br />
+                  <%= f.text_field :looking_for_independent %>
+                </div>
+
+                <div class="field">
+                  <%= f.label :experience, '¿Cuéntanos sobre tu experiencia trabajador?' %><br />
+                  <%= f.text_field :experience %>
+                </div>
+
+                <div class="field">
+                  <%= f.label :would_work, '¿Cómo te gustaría trabajar?' %><br />
+                  <%= f.text_field :would_work %>
+                </div>
+
+                 <div class="field">
+                  <%= f.label :jobs_made, '¿Qué tipo de trabajos has realizado?' %><br/>
+                  <%= f.text_field :jobs_made %>
+                </div>
+
+                 <div class="field">
+                 <p>Queremos contactarnos contigo</p> <br/>
+                  <%= f.label :phone_contact, 'Celular' %><br/>
+                  <%= f.text_field :phone_contact %>
+                </div>
+
+                <div class="field">
+                  <%= f.label :email, 'Correo electrónico' %><br/>
+                  <%= f.email_field :email, autofocus: true %>
+                </div>
+
+                 <div class="field">
+                 <p>Un liker trabaja desde donde quiere, queremos saber cómo es ese lugar</p><br/>
+                  <%= f.label :type_computer, '¿Qué tipo de computador tienes?' %><br />
+                  <%= f.text_field :type_computer %>
+                </div>
+
+                 <div class="field">
+                  <%= f.label :use_computer, '¿Quién usa el equipo normalmente?' %><br />
+                  <%= f.text_field :use_computer %>
+                </div>
+
+                  <div class="field">
+                  <%= f.label :connection_internet, 'Tu conexión de internet es de' %><br />
+                  <%= f.text_field :connection_internet %>
+                  </div>
+
+                <div class="field">
+                  <%= f.label :computer_accessories, '¿Puedes hablar desde tu computador?' %><br />
+                  <%= f.text_field :computer_accessories %>
+                </div>
+
+                <div class="field">
+                <p>Ahora imagina por un momento que estás trabajando desde el lugar que elegiste.</p><br />
+
+                  <%= f.label :comfort, '¿Qué tan cómodo crees que sería para trabajar, entendiendo que debes hablar con personas a través de tu computador? (Ten en cuenta el entorno, las distracciones, el riudo, la temperatura, las interrupciones, etc).' %><br />
+                  <%= f.text_field :comfort%>
+                </div>
+
+                <div class="field">
+                  <%= f.label :being, '¿Cómo eres?' %><br />
+                  <p> Sé honesto contigo, hay cosas de ti que a lo mejor no te habías cuestionado. Recuerda que no hay respuestas correctas ni equivocadas, sólo queremos conocerte lo mejor posible para encontrar la mejor forma de trabajar juntos.</p><br/>
+                  <%= f.text_field :being%>
+                </div>
+
+                <div class="field">
+                  <%= f.label :do, '¿Cómo te gusta hacer las cosas?' %><br />
+                  <p> Sé honesto contigo, hay cosas de ti que a lo mejor no te habías cuestionado. Recuerda que no hay respuestas correctas ni equivocadas, sólo queremos conocerte lo mejor posible para encontrar la mejor forma de trabajar juntos.</p><br/>
+                  <span>Arrastra el botón dependiendo de lo inclinado que te sientas por cada concepto.
+                  Si crees que estás en un punto medio, puedes dejar el botón en el medio
+                  o arrastrarlo solo un poco hacia donde prefieras.</span><br/>
+                  <%= f.text_field :do%>
+                </div>
+
+                <div class="field">
+                  <%= f.label :motivation, 'El podio de lo que más te motiva'%><br />
+                  <span>Califica sólo los tres factores que más te importan de la siguiente lista, dándole el número 1 al que más te motiva.</span><br/>
+                  <%= f.text_field :motivation%>
+                </div>
+
+
+                <div class="field">
+                  <%= f.label :avatar, 'Adjuntar foto de perfil'%><br/>
+                  <%= f.file_field :avatar %>
+                </div>
+
+
+                <div class="field">
+                  <%= f.label :password %>
+                  <% if @minimum_password_length %>
+                  <em>(<%= @minimum_password_length %> characters minimum)</em>
+                  <% end %><br />
+                  <%= f.password_field :password, autocomplete: "off" %>
+                </div>
+
+                <div class="field">
+                  <%= f.label :password_confirmation %><br />
+                  <%= f.password_field :password_confirmation, autocomplete: "off" %>
+                </div>
+
+                <div class="actions">
+                  <%= f.submit "Enviar registro" %>
+                </div>
+              <% end %>
+
+              <%= render "devise/shared/links" %>
+
+  </div>
+</div>
+</section>
