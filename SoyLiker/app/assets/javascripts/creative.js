@@ -4,8 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ $(document).ready( function () {
+
 (function($) {
     "use strict"; // Start of use strict
+
+
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
@@ -47,3 +51,4 @@
     new WOW().init();
 
 })(jQuery); // End of use strict
+});
