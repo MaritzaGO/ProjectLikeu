@@ -26,11 +26,21 @@
 	                    <li>
 	                        <a class="page-scroll" href="#apply">Quiero ser un liker</a>
 	                    </li>
+
+					<% if user_signed_in? %>
+          					<li><p>Bienvenid@ <%= current_user.username%></p>
+          						<%= link_to('Cerrar sesión', destroy_user_session_path, :method => :delete) %></li>
+         				 		<% else %>
+            				<li><%= link_to('Iniciar sesión', new_user_session_path)%></li>
+          			<% end %>
+
 	                </ul>
+
 	            </div>
 	            <!-- /.navbar-collapse -->
 	        </div>
 	        <!-- /.container-fluid -->
+
 	 </nav>
 
 
