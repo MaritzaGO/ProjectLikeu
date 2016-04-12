@@ -5,29 +5,35 @@
   <div class="row">
 
 
-        <h2>Registro de usuario</h2>
+        <h1>Cuéntanos sobre ti</h1>
+
+        <p>Contesta las siguientes preguntas con la mayor sinceridad. No hay respuestas correctas ni equivocadas, sólo queremos conocerte lo mejor posible para encontrar la mejor forma de trabajar juntos.</p>
 
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= devise_error_messages! %>
 
 
+                <h2>Datos personales</h2>
+
                 <div class="field">
-                  <%= f.label :username, '¿Queremos saber cuál es tu nombre?' %><br />
+                  <%= f.label :username, '¿Queremos saber cuál es tu nombre?' %>
                   <%= f.text_field :username%>
-                </div>
 
-                <div class="field">
-                  <%= f.label :birthdate, 'Tu fecha de nacimiento' %><br/>
+                  <%= f.label :birthdate, 'Tu fecha de nacimiento' %>
                   <%= date_select :birthday, "birthday",start_year: 1920, end_year: 2016,class: "form-control" %>
+
+                <%= label_tag :sex_sel, '¿Cuál es tu género?' %>
+                <form action="demo_form.asp" method="get">
+                    <input type="radio" name="sexo" value="Masculino">Masculino<input type="radio" name="sexo"value="Femenino" checked> Femenino<br>
+                </form>
+
+
                 </div>
 
-                <div class="field">
-                <%= label_tag :sex_sel, '¿Cuál es tu género?' %><br />
-                <form action="demo_form.asp" method="get">
-                    <input type="radio" name="sexo" value="Masculino"> Masculino<input type="radio" name="sexo"value="Femenino" checked> Femenino<br>
-                </form>
-              
-                </div>
+               
+
+                
+             
 
                 <div class="field">
                   <%= f.label :ocupation, '¿Actualmente a qué te dedicas?' %><br />
@@ -60,9 +66,44 @@
                 </div>
 
                  <div class="field">
-                 <p>Queremos contactarnos contigo</p> <br/>
-                  <%= f.label :phone_contact, 'Celular' %><br/>
-                  <%= f.text_field :phone_contact %>
+
+                 <div class=introductionquestion>
+                 <span>Queremos contactarnos contigo</span> <br/>
+                </div>
+
+                        <!-- sheepIt Form -->
+                <div id="sheepItForm">
+                 
+                <%= f.label :phone_contact, 'Celular' %><%= f.text_field :phone_contact %>
+
+                  <!-- Form template-->
+                  <div id="sheepItForm_template">
+
+                    <label for="sheepItForm_#index#_phone">Teléfono<span id="sheepItForm_label"></span></label>
+                    <input id="sheepItForm_#index#_phone" name="person[phones][#index#][phone]" type="text" size="15" maxlength="10" />
+                    <a id="sheepItForm_remove_current">
+                      <img class="delete" src="/images/cross.png" width="16" height="16" border="0">
+                    </a>
+                  </div>
+                  <!-- /Form template-->
+                   
+                  <!-- No forms template -->
+                  <div id="sheepItForm_noforms_template">No tengo más números de teléfonos</div>
+                  <!-- /No forms template-->
+                   
+                  <!-- Controls -->
+                  <div id="sheepItForm_controls">
+                    <div id="sheepItForm_add"><a><span>Adicionar número de teléfono</span></a></div>
+                    <div id="sheepItForm_remove_last"><a><span>Eliminar</span></a></div>
+                    <div id="sheepItForm_remove_all"><a><span>Eliminar todos los registro</span></a></div>
+                    <div id="sheepItForm_add_n">
+                             
+                  </div>
+                  <!-- /Controls -->
+                   
+                </div>
+                <!-- /sheepIt Form -->
+
                 </div>
 
                 <div class="field">
@@ -70,8 +111,12 @@
                   <%= f.email_field :email, autofocus: true %>
                 </div>
 
+
+
                  <div class="field">
+                 <div class=introductionquestion>
                  <p>Un liker trabaja desde donde quiere, queremos saber cómo es ese lugar</p><br/>
+                 </div>
                   <%= f.label :type_computer, '¿Qué tipo de computador tienes?' %><br />
                   <%= f.text_field :type_computer %>
                 </div>
@@ -92,7 +137,11 @@
                 </div>
 
                 <div class="field">
-                <p>Ahora imagina por un momento que estás trabajando desde el lugar que elegiste.</p><br />
+                
+                <div class=introductionquestion>
+                <p>Ahora imagina por un momento que estás trabajando desde el lugar que elegiste.
+                </p><br />
+                </div>
 
                   <%= f.label :comfort, '¿Qué tan cómodo crees que sería para trabajar, entendiendo que debes hablar con personas a través de tu computador? (Ten en cuenta el entorno, las distracciones, el riudo, la temperatura, las interrupciones, etc).' %><br />
                   <%= f.text_field :comfort%>

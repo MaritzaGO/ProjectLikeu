@@ -513,3 +513,30 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+
+/*Estilo formulario*/
+
+.introductionquestion {
+    
+    text-align: center;
+    text-decoration: overline;
+    
+}
+
+/*Campo teléfono en formulario*/
+
+<style>
+
+
+#sheepItForm_controls div, #sheepItForm_controls div input {
+    margin-right: 20px;
+    float: right;
+}
+
+
+</style>
+/* Fin campo teléfono*/
+
+
+/*Fin estilo formulario*/
