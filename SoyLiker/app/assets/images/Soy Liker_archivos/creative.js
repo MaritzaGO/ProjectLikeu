@@ -4,6 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
  $(document).ready( function () {
 
 (function($) {
@@ -50,28 +51,5 @@
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
-     // Formulario Dinámico//
-
-    $(document).ready(function() {
-         
-        var sheepItForm = $('#sheepItForm').sheepIt({
-            separator: '',
-            allowRemoveLast: true,
-            allowRemoveCurrent: true,
-            allowRemoveAll: true,
-            allowAdd: true,
-            allowAddN: true,
-            maxFormsCount: 10,
-            minFormsCount: 0,
-            iniFormsCount: 2
-        });
-     
-    });
-
-
-
-
-
 })(jQuery); // End of use strict
 });
-
