@@ -26,6 +26,9 @@
 	                    <li>
 	                        <a class="page-scroll" href="#apply">Quiero ser un liker</a>
 	                    </li>
+	                     <li>
+	                        <a class="page-scroll" href="#about">Mas informacion</a>
+	                    </li>
 
 					<% if user_signed_in? %>
           					<li><p>Bienvenid@ <%= current_user.username%></p>
@@ -52,19 +55,21 @@
 		<section id="home">
 			<div class="header-content">
 				<h1>Somos Gente como tú</h1>
-				<hr>
+				<hr class="largo">
 				<h1>Gente con talento, que quiere llegar lejos pero a su manera.</h1>		
                	<a href="#being-a-liker" class="btn btn-primary btn-xl page-scroll">Quiero saber mas</a>
             </div>
 		</section>
 
 	</header>
-	<section class="bg-primary" id="being-a-liker">
+	<section class="bg-primary seccion-suave" id="being-a-liker">
 		 <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
 		
 					<h2 class="section-heading">Por que ser un Liker</h2>
+
+					<br>
 					
 					<p>Si crees que trabajar ya no es tomar el transporte público por horas y llegar a un espacio lleno de gente para hacer algo que no te gusta, dejame decirte que estás en lo correcto. La vida hoy se trata de equilibrio ya no somos como nuestros padres que necesitaban una corbata y un espacio frio y triste donde trabajar, ahora somos la generación del talento, en la era de la tecnología donde todo esta a la mano.</p>
 
@@ -75,23 +80,53 @@
 
 	</section>
 
+	 <aside class="bg-dark no-padding">
+        <div class="container text-center">
+            <div class="call-to-action">
+            <br>
+                <h2>Datos Curiosos</h2>
+                
+	                <div class="row">
+	                	<div class="col-lg-3 col-md-6">
+	                		<h2>106</h2>
+	                		<p>Clientes felices</p>
+	                	</div>
+	                	<div class="col-lg-3 col-md-6">
+	                		<h2>106</h2>
+	                		<p>Nuevos likers</p>
+	                	</div>
+	                	<div class="col-lg-3 col-md-6">
+	                		<h2>106</h2>
+	                		<p>Likes en nuestra comunidad</p>
+	                	</div>
+	                	<div class="col-lg-3 col-md-6">
+	                		<h2>106</h2>
+	                		<p>Solucitudes de aspirantes</p>
+	                	</div>
+	                </div>	
+                
+            </div>
+        </div>
+    </aside>
+
 	<section id="apply">
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Como ser un Liker.</h2>
-                    <hr class="primary">
+                    <hr class="largo">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box">
+                    <div class="service-box text-center">
                         <i class="fa fa-4x fa-file-text-o wow bounceIn text-primary"></i>
                         <h3>Queremos Saber de tí</h3>
                         <p class="text-muted">Con tu información no solo podremos saber mas de tí,  además te podremos contactar para que inicies con nosostros.</p>
+                       
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
@@ -99,6 +134,7 @@
                         <i class="fa fa-4x fa-bar-chart wow bounceIn text-primary" data-wow-delay=".1s"></i>
                         <h3>Sabemos tú Talento</h3>
                         <p class="text-muted">Estos serán los 10 minutos mejor invertidos en tu vida. Aquí encontraremos talentos que ni tú sabias que tenias. Asi sabremos cual es el mejor trabajo para ti.</p>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 text-center">
@@ -106,15 +142,33 @@
                         <i class="fa fa-4x fa-microphone wow bounceIn text-primary" data-wow-delay=".2s"></i>
                         <h3>Queremos Escucharte</h3>
                         <p class="text-muted">Será la primera vez que te escuchemos, así que ve por tu diadema y pon tu mejor voz.</p>
+
+
                     </div>
                 </div>
-                
+            </div>
+            <br> 
+            <br>
+            <div class="col-lg-8 col-lg-offset-2 text-center">  
+                               
+            <%= button_to "Quiero ser liker!", new_user_registration_path,form: {target: '_blank'}, :id => "open-contacts-dialog-btn",:class => "btn btn-primary btn-xl", :method => :get %>
             </div>
         </div>
-    
-		
-
 	</section>
+	<section id="about" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div id ="redes-sociales" class="col-lg-4 col-md-4 text-center">
+                    <h3 class="section-heading">Siguenos en redes sociales!</h3>
+                    <hr class="primary">
+                    <a  href="http://www.facebook.com" target="_blank" title="Facebook"><i class="fa fa-2x fa-facebook wow bounceIn text-primary iconos-redes"></i></a>
+                    <a  href="http://www.facebook.com" target="_blank"><i class="fa fa-2x fa-twitter wow bounceIn text-primary iconos-redes"></i></a>
+                    <a  href="http://www.facebook.com" target="_blank"><i class="fa fa-2x fa-instagram wow bounceIn text-primary iconos-redes"></i></a> 
+                    <a  href="http://www.facebook.com" target="_blank"><i class="fa fa-2x fa-youtube wow bounceIn text-primary iconos-redes"></i></a> 
+                </div>
+        	</div>
+        </div>	
+    </section>
 
 
 

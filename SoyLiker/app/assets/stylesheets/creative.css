@@ -20,6 +20,12 @@ hr {
     border-width: 3px;
 }
 
+hr.largo {
+    max-width: 60%;
+    border-color: #00F5E5;
+    border-width: 1px;
+}
+
 hr.light {
     border-color: #fff;
 }
@@ -49,6 +55,20 @@ p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
+}
+
+.seccion-suave
+{
+    padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.iconos-redes
+{
+    padding: 0px 5px;
 }
 
 .bg-primary {
@@ -104,19 +124,19 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: #00F5E5;
     text-decoration:none;
 }
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: #00F5E5;
     text-decoration:none;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: #00F5E5!important;
     background-color: transparent;
 
 }
@@ -148,7 +168,7 @@ aside {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
+        color: #00F5E5;
     }
 
     .navbar-default.affix {
@@ -158,12 +178,12 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #f05f40;
+        color: #00F5E5;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #00F5E5;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -173,7 +193,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: #00F5E5;
     }
 }
 
@@ -208,7 +228,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(header2.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(header2.jpg);
    /* background-image: url(header1.jpg); */
     background-position: center;
     -webkit-background-size: cover;
