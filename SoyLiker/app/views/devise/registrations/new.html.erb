@@ -15,6 +15,7 @@
 
                 <h2>Datos personales</h2>
 
+              <div class="parte1">
                 <div class="field">
                   <%= f.label :username, '¿Queremos saber cuál es tu nombre?' %>
                   <%= f.text_field :username%>
@@ -24,22 +25,35 @@
 
                 <%= label_tag :sex_sel, '¿Cuál es tu género?' %>
                 <form action="demo_form.asp" method="get">
-                    <input type="radio" name="sexo" value="Masculino">Masculino<input type="radio" name="sexo"value="Femenino" checked> Femenino<br>
+                <img src=".png">
+                    <input type="radio" name="sexo" value="Masculino">
+                <img src="login.png">
+                    <input type="radio" name="sexo"value="Femenino" checked><br>
                 </form>
 
 
                 </div>
-
+              </div>
                
 
                 
-             
-
+             <div class="parte2">
                 <div class="field">
                   <%= f.label :ocupation, '¿Actualmente a qué te dedicas?' %><br />
-                  <%= f.text_field :ocupation %>
-                </div>
+                  
+                  <input type="image" name="ocupation" src="cross.png"/> Estudiante universitario
+                  <input type="image" name="ocupation" src="trabajocomoempleado.png"/> Trabajo como empleado
+                  <input type="image" name="ocupation" src="estudioytrabajoempleado.png"/> Estudio y trabajo como empleado
+                  <input type="image" name="ocupation"  src="soyindependiente.png"/> Soy independiente
+                  <input type="image" name="ocupation" src="soyama(o)decasa.png"/> Soy ama (o) de casa
+                  <input type="image" name="ocupation" src="notrabajoniestudio.png"/> No trabajo ni estudio
 
+                
+                </div>
+            </div>
+
+
+            <div class="parte3">
                 <div class="field">
                   <%= f.label :looking_for_employee, '¿Qué estás buscando como trabajador?' %><br />
                   <%= f.text_field :looking_for_employee %>
@@ -49,6 +63,15 @@
                   <%= f.label :looking_for_independent, '¿Qué estás buscando como independiente?' %><br />
                   <%= f.text_field :looking_for_independent %>
                 </div>
+            </div>
+
+
+
+
+
+
+
+
 
                 <div class="field">
                   <%= f.label :experience, '¿Cuéntanos sobre tu experiencia trabajador?' %><br />

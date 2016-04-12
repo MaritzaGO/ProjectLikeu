@@ -537,6 +537,13 @@ body {
 
 /*Estilo formulario*/
 
+.parte1 {
+
+    margin-bottom: 40px;
+    margin-left: 2px;
+
+}
+
 .introductionquestion {
     
     text-align: center;
