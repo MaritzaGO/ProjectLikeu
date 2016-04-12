@@ -20,6 +20,12 @@ hr {
     border-width: 3px;
 }
 
+hr.largo {
+    max-width: 60%;
+    border-color: #00F5E5;
+    border-width: 1px;
+}
+
 hr.light {
     border-color: #fff;
 }
@@ -49,6 +55,20 @@ p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.5;
+}
+
+.seccion-suave
+{
+    padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.iconos-redes
+{
+    padding: 0px 5px;
 }
 
 .bg-primary {
