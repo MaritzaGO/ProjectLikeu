@@ -21,6 +21,8 @@
         
     });
 
+   
+
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
@@ -70,10 +72,15 @@
      
     });
     // Formulario Dinámico//
+    //activador de dropdown//
+   $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+    // Formulario Dinámico//
+
 
 
 
 
 })(jQuery); // End of use strict
 });
-
