@@ -530,6 +530,8 @@ img::-moz-selection {
     background: 0 0;
 }
 
+
+
 body {
     webkit-tap-highlight-color: #222;
 }
@@ -537,11 +539,115 @@ body {
 
 /*Estilo formulario*/
 
-.introductionquestion {
-    
+.parte1 {
+
+    margin-bottom: 40px;
+    margin-left: 2px;
+
+}
+
+.icono-form
+{
+    width: 120px;
+    height: 120px;
+
+}
+
+.fieldparte1{
     text-align: center;
-    text-decoration: overline;
-    
+}
+
+
+.fieldparte2{
+    text-align: center;
+}
+
+.fieldparte3{
+    text-align: center;
+}
+
+.fieldparte4{
+    text-align: center;
+}
+
+.fieldparte5{
+    text-align: center;
+}
+
+.fieldparte6{
+    text-align: center;
+}
+
+.fieldparte7{
+    text-align: center;
+}
+
+.fieldparte8{
+    text-align: center;
+}
+
+.fieldparte9{
+    text-align: center;
+}
+
+.variableparte2{
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.perfilesparte3{
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.variableparte3{
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.variableparte4{
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.variableparte5{
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.variableparte6{
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.variableparte7{
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.variableparte8{
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.variableparte9{
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
+.introductionquestion {
+    text-align: center;
+    text-decoration: overline;  
+}
+
+input:focus {
+border-color: #00F5E5;
+   }
+
+.tituloinicial {
+
+    text-align: center;
+    text-decoration: overline;  
 }
 
 /*Campo teléfono en formulario*/
