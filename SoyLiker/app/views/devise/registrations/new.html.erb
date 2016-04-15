@@ -364,9 +364,9 @@
             <div class="fieldparte8">
 
               <div class="variableparte8">
-
-                  <img src="<%=image_path('usoequipo.png')%>" class="icono-form"><br/>
                   <%= f.label :use_computer, '¿Quién usa el equipo normalmente?' %><br/>
+                  <img src="<%=image_path('usoequipo.png')%>" class="icono-form"><br/>
+                  
                   
                     <input type="radio" name="use_computer" value="1" /> Sólo lo uso yo<br/>
                     <input type="radio" name="use_computer" value="2" /> Es de uso familiar<br/>
@@ -377,9 +377,9 @@
               <div class="fieldparte8">
 
                 <div class="variableparte8">
-
+                  <%= f.label :connection_internet, 'Tu conexión de internet es de...' %><br/>
                   <img src="<%=image_path('conexioninternet.png')%>" class="icono-form"><br/>
-                  <%= f.label :connection_internet, 'Tu conexión de internet es de' %><br/>
+                  
                   
                   <input type="radio" name="connection_internet" value="1" /> Menor de 2 MB<br/>
                   <input type="radio" name="connection_internet" value="2" /> Entre 2 y 5 MB<br/>
@@ -392,9 +392,9 @@
               <div class="fieldparte8">
 
                 <div class="variableparte8">
-
-                  <img src="<%=image_path('accesorios.png')%>" class="icono-form"><br/>
                   <%= f.label :computer_accessories, '¿Puedes hablar desde tu computador?' %><br/>
+                  <img src="<%=image_path('accesorios.png')%>" class="icono-form"><br/>
+                  
                   
                   <input type="radio" name="computer_accessories" value="1" /> Tengo diadema<br/>
                   <input type="radio" name="computer_accessories" value="2" /> Manos libres<br/>
@@ -439,7 +439,7 @@
 
           <div class="parte10">
 
-                <div class="fielparte10">
+                <div class="fieldparte10">
                   <%= f.label :avatar, 'Adjuntar foto de perfil'%><br/>
                   <%= f.file_field :avatar %>
                 </div>
@@ -449,35 +449,27 @@
           <div class="parte11">
 
                 <div class="fieldparte11">
-                    <%= f.label :password %>
+                    <%= f.label :password,"Elija una contraseña"%>
                     <% if @minimum_password_length %>
-                    <em>(<%= @minimum_password_length %> characters minimum)</em>
-                    <% end %><br />
+                    <em>(<% @minimum_password_length %> Mínimo 8 carácteres)</em>
+                    <% end %><br/>
                     <%= f.password_field :password, autocomplete: "off" %>
                 </div>
 
-                <div class="field">
-                  <%= f.label :password_confirmation %><br />
+                <div class="fieldparte11">
+                  <%= f.label :password_confirmation,"Por favor confirme contraseña"%><br/>
                   <%= f.password_field :password_confirmation, autocomplete: "off" %>
                 </div>
+                  <br/>
+                  <br/>
+              <div class="fieldparte11">
+                  <div class="actions">
+                    <%= f.submit "Enviar registro" %>
+                  </div>
+                  <% end %>
+              </div>
 
-          </div>
-
-
-
-
-
-
-                <div class="actions">
-                  <%= f.submit "Enviar registro" %>
-                </div>
-              <% end %>
-
-             
-
-
-
-
+             </div>
 
 
 
