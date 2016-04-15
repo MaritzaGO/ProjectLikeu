@@ -63,11 +63,11 @@
             allowAddN: true,
             maxFormsCount: 10,
             minFormsCount: 0,
-            iniFormsCount: 2
+            iniFormsCount: 0
         });
      
     });
-
+    // Formulario Dinámico//
 
 
 
