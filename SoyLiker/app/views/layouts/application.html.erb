@@ -16,6 +16,64 @@
   
 
 </head>
+
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+	        <div class="container-fluid">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                 <a class="navbar-brand" href="#">
+        				<img alt="LikeU" src="...">
+      				</a>
+	                <a class="navbar-brand page-scroll" href="#home">LikeU</a>
+	            </div>
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li>
+	                        <a class="page-scroll" href="/">Inicio</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="/#what">Lo que hacemos</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="/#why">Por que lo hacemos?</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="/#how">Como lo hacemos?</a>
+	                    </li>
+	                     <li>
+	                        <a class="page-scroll" href="/quieroserliker">Que es un liker</a>
+	                    </li>
+	                     <li>
+	                        <a class="page-scroll" href="#contact">Contacto</a>
+	                    </li>
+	                    <li role="presentation" class="dropdown">
+   							<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      						Dropdown <span class="caret"></span>
+    						</a>
+				    		<ul class="dropdown-menu">
+				      		<a href="#">Action</a>
+				    		</ul>
+				 		 </li>
+
+					<% if user_signed_in? %>
+          					<li><p>Bienvenid@ <%= current_user.username%></p>
+          						<%= link_to('Cerrar sesión', destroy_user_session_path, :method => :delete) %></li>
+         				 		<% else %>
+            				<li><%= link_to('Iniciar sesión', new_user_session_path)%></li>
+          			<% end %>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container-fluid -->
+	 </nav>
 <body>
 
 
