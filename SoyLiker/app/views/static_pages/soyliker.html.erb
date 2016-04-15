@@ -1,38 +1,76 @@
 
 
 
+	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+	        <div class="container-fluid">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand page-scroll" href="/">LikeU</a>
+	            </div>
+
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li>
+	                        <a class="page-scroll" href="#home">Inicio</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#being-a-liker">Que es ser un Liker</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#our-likers">Nuestros likers</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#apply">Quiero ser un liker</a>
+	                    </li>
+	                     <li>
+	                        <a class="page-scroll" href="#about">Mas informacion</a>
+	                    </li>
+
+					<% if user_signed_in? %>
+          					<li><p>Bienvenid@ <%= current_user.username%></p>
+          						<%= link_to('Cerrar sesión', destroy_user_session_path, :method => :delete) %></li>
+         				 		<% else %>
+            				<li><%= link_to('Iniciar sesión', new_user_session_path)%></li>
+          			<% end %>
+
+
+
+	                </ul>
+
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container-fluid -->
+
+	 </nav>
+
+
 	   
 
-	<header class="header-likeu">
+	<header class="header-soyliker">
 		<section id="home">
 			<div class="header-content">
-				
-				<h2><span>Más que Innovación en Call Center,<img src="spacer.gif" alt=" " width="1" height="1" style="margin-right: 250px; margin-left: 5px;" /></span></h2>
-				
-				<h1><span><img src="spacer.gif" alt=" " width="1" height="1" style="margin-right: 250px; margin-left: 5px;" />somos como tú.</span></h1>	
-				
-               
+				<h1>Somos Gente como tú</h1>
+				<hr class="largo">
+				<h1>Gente con talento, que quiere llegar lejos pero a su manera.</h1>		
+               	<a href="#being-a-liker" class="btn btn-primary btn-xl page-scroll">Quiero saber mas</a>
             </div>
 		</section>
 
 	</header>
-	<section class="bg-primary seccion-suave" id="what">
+	<section class="bg-primary seccion-suave" id="being-a-liker">
 		 <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                	<div class="row">
-	                	<div class="col-lg-5 col-md-6">
-	                		<h2 class="section-heading">Revolucionamos...</h2>
-	                		<p>Clientes felices</p>
-	                	</div>
-	                	<div class="col-lg-7 col-md-6">
-	                		<h2>106</h2>
-	                		<p>Nuevos likers</p>
-	                	</div>
-	                </div>	
-
 		
-					<h2 class="section-heading">Revolucionamos...</h2>
+					<h2 class="section-heading">Por que ser un Liker</h2>
 
 					<br>
 					
@@ -247,3 +285,7 @@
     		<span>LikeU</span> <i class="fa fa-registered"></i> <span>2016</span>
     	</div>
     </section>
+
+
+
+

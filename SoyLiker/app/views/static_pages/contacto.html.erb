@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Soy Liker</title>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  
-
-  <script type="text/javascript" src="jquery-1.4.min.js"></script>
-  <script type="text/javascript" src="jquery.sheepItPlugin-1.1.1.min.js"></script>
-  
-
-</head>
 
 	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
 	        <div class="container-fluid">
@@ -27,11 +9,9 @@
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
 	                </button>
-	                 <a class="navbar-brand" href="#">
-        				<img alt="LikeU" src="...">
-      				</a>
 	                <a class="navbar-brand page-scroll" href="#home">LikeU</a>
 	            </div>
+
 	            <!-- Collect the nav links, forms, and other content for toggling -->
 	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	                <ul class="nav navbar-nav navbar-right">
@@ -53,14 +33,6 @@
 	                     <li>
 	                        <a class="page-scroll" href="#contact">Contacto</a>
 	                    </li>
-	                    <li role="presentation" class="dropdown">
-   							<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-      						Dropdown <span class="caret"></span>
-    						</a>
-				    		<ul class="dropdown-menu">
-				      		<a href="#">Action</a>
-				    		</ul>
-				 		 </li>
 
 					<% if user_signed_in? %>
           					<li><p>Bienvenid@ <%= current_user.username%></p>
@@ -68,21 +40,31 @@
          				 		<% else %>
             				<li><%= link_to('Iniciar sesión', new_user_session_path)%></li>
           			<% end %>
+
+
+
 	                </ul>
+
 	            </div>
 	            <!-- /.navbar-collapse -->
 	        </div>
 	        <!-- /.container-fluid -->
+
 	 </nav>
-<body>
 
 
+	   
 
+	<header class="header-likeu">
+		<section id="home">
+			<div class="header-content">
+				
+				<h2><span>Más que Innovación en Call Center,<img src="spacer.gif" alt=" " width="1" height="1" style="margin-right: 250px; margin-left: 5px;" /></span></h2>
+				
+				<h1><span><img src="spacer.gif" alt=" " width="1" height="1" style="margin-right: 250px; margin-left: 5px;" />somos como tú.</span></h1>	
+				
+               
+            </div>
+		</section>
 
-
-
-
-<%= yield %>
-
-</body>
-</html>
+	</header>
