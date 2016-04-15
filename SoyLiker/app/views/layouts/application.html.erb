@@ -10,7 +10,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   
-
+  
   <script type="text/javascript" src="jquery-1.4.min.js"></script>
   <script type="text/javascript" src="jquery.sheepItPlugin-1.1.1.min.js"></script>
   
@@ -27,47 +27,64 @@
 	                    <span class="icon-bar"></span>
 	                    <span class="icon-bar"></span>
 	                </button>
-	                 <a class="navbar-brand" href="#">
-        				<img alt="LikeU" src="...">
+	                 <a class="navbar-brand" href="/">
+        				<img alt="LikeU" src="">
       				</a>
-	                <a class="navbar-brand page-scroll" href="#home">LikeU</a>
+	                <a class="navbar-brand page-scroll" href="/">LikeU</a>
 	            </div>
 	            <!-- Collect the nav links, forms, and other content for toggling -->
 	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	                <ul class="nav navbar-nav navbar-right">
-	                    <li>
-	                        <a class="page-scroll" href="/">Inicio</a>
-	                    </li>
-	                    <li>
-	                        <a class="page-scroll" href="/#what">Lo que hacemos</a>
-	                    </li>
-	                    <li>
-	                        <a class="page-scroll" href="/#why">Por que lo hacemos?</a>
-	                    </li>
-	                    <li>
-	                        <a class="page-scroll" href="/#how">Como lo hacemos?</a>
-	                    </li>
-	                     <li>
-	                        <a class="page-scroll" href="/quieroserliker">Que es un liker</a>
-	                    </li>
-	                     <li>
+	                    <li role="LikeU" class="dropdown">
+   							<a class="dropdown-toggle" data-toggle="dropdown" href="/" role="button" aria-haspopup="true" aria-expanded="false">
+   							LikeU
+   							<span class="caret"></span>
+    						</a>
+				    		<ul class="dropdown-menu dropdown-menu-left">
+				    			<li>
+	                       			<a class="page-scroll" href="/">Inicio</a>
+	                   			</li>
+				    			<li>
+	                       			<a class="page-scroll" href="/#what">Lo que hacemos</a>
+	                   			</li>
+				      			<li>
+			                        <a class="page-scroll" href="/#why">Por que lo hacemos?</a>
+			                    </li>
+			                    <li>
+			                        <a class="page-scroll" href="/#how">Como lo hacemos?</a>
+			                    </li>
+				      		</ul>
+				 		</li>                  
+	                    <li role="SoyLiker" class="dropdown">
+   							<a class="dropdown-toggle" data-toggle="dropdown" href="/" role="button" aria-haspopup="true" aria-expanded="false">
+   							Soy Liker
+   							<span class="caret"></span>
+    						</a>
+				    		<ul class="dropdown-menu dropdown-menu-left">
+				    			<li>
+	                       			 <a class="page-scroll" href="/quieroserliker">Inicio</a>
+	                   			</li>
+				    			<li>
+	                       			<a class="page-scroll" href="/quieroserliker#being-a-liker">Ser liker es...</a>
+	                   			</li>
+				      			<li>
+			                        <a class="page-scroll" href="/quieroserliker#our-likers">Nuestros Likers</a>
+			                    </li>
+			                    <li>
+			                        <a class="page-scroll" href="/quieroserliker#apply">Convertirme en Liker</a>
+			                    </li>
+				    		</ul>
+				 		</li>
+				 		<li>
 	                        <a class="page-scroll" href="#contact">Contacto</a>
 	                    </li>
-	                    <li role="presentation" class="dropdown">
-   							<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-      						Dropdown <span class="caret"></span>
-    						</a>
-				    		<ul class="dropdown-menu">
-				      		<a href="#">Action</a>
-				    		</ul>
-				 		 </li>
 
-					<% if user_signed_in? %>
-          					<li><p>Bienvenid@ <%= current_user.username%></p>
-          						<%= link_to('Cerrar sesión', destroy_user_session_path, :method => :delete) %></li>
-         				 		<% else %>
-            				<li><%= link_to('Iniciar sesión', new_user_session_path)%></li>
-          			<% end %>
+						<% if user_signed_in? %>
+	          					<li><p>Bienvenid@ <%= current_user.username%></p>
+	          						<%= link_to('Cerrar sesión', destroy_user_session_path, :method => :delete) %></li>
+	         				 		<% else %>
+	            				<li><%= link_to('Iniciar sesión', new_user_session_path)%></li>
+	          			<% end %>
 	                </ul>
 	            </div>
 	            <!-- /.navbar-collapse -->
