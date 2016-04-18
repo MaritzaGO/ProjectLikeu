@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery.easing
 //= require jquery.easing.min
@@ -24,6 +25,7 @@
 //= require turbolinks
 //= require jquery.sheepItPlugin.min
 //= require jquery.sheepItPlugin
+
 
 
 

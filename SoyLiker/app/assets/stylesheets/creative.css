@@ -58,6 +58,14 @@ p {
     line-height: 1.5;
 }
 
+
+.drop-t {
+    padding: 5px;
+    font-size: 12px;
+    background: rgba(230, 230, 230, 0.2);
+    -webkit-appearance: none;
+
+}
 .footer
 {
     max-height: 20px;
