@@ -59,6 +59,12 @@ p {
 }
 
 
+.logo
+{   
+
+    width: 200px;
+}
+
 .drop-t {
     padding: 5px;
     font-size: 12px;
@@ -105,13 +111,7 @@ p {
     line-height: 1.4em;
 }
 
-.finloquehacemos{
-    text-align: center
-}
 
-.fincomolohacemos{
-    text-align: center
-}
 
 .seccion-suave
 {
@@ -150,6 +150,10 @@ p {
     background-image: url(port_1.jpg);
 }
 
+.img-center {
+    margin: 0 auto;
+}
+
 .text-faded {
     color: rgba(255,255,255,.7);
 }
@@ -181,6 +185,10 @@ aside {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     color: #f05f40;
+}
+
+.navbar-default .navbar-header .navbar-brand > img {
+    width: 20px;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -217,6 +225,13 @@ aside {
 }
 
 @media(min-width:768px) {
+
+    .logo
+    {
+        margin-top: 100px;
+    width: 220px;
+    }
+
     .navbar-default {
         border-color: rgba(255,255,255,.3);
         background-color: transparent;
@@ -401,6 +416,12 @@ header .header-content .header-content-inner p {
 }
 
 @media(min-width:992px) {
+
+    .logo
+    {
+        margin-top: 0px;
+    width: 260px;
+    }
     .service-box {
         margin: 20px auto 0;
     }
@@ -622,7 +643,6 @@ img::-moz-selection {
     color: #fff;
     background: 0 0;
 }
-
 
 
 body {
