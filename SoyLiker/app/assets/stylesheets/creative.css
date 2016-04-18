@@ -64,6 +64,45 @@ p {
     background-color: #222; 
     padding: 0px;
     color:rgba(230, 230, 230, 0.5);
+    text-align: center;
+}
+
+.finlikeucolombia p{
+    top: 17px; right: 631px; width: 300px; position: absolute;
+    line-height: 1.4em; text-align: right;
+}
+
+.finlikeumexico p {
+    top: 17px; left: 631px; width: 300px; position: absolute;
+    line-height: 1.4em; text-align: left;
+}
+
+.finlikeucorreo1{
+    text-decoration:underline;
+    text-align: left;
+}
+
+.finlikeucorreo2{
+    text-decoration:underline;
+    text-align: right;
+}
+
+.finlikeu1 span{
+    text-align: left; 
+    line-height: 1.4em;
+}
+
+.finlikeu2 span{
+    text-align: right;
+    line-height: 1.4em;
+}
+
+.finloquehacemos{
+    text-align: center
+}
+
+.fincomolohacemos{
+    text-align: center
 }
 
 .seccion-suave
@@ -342,6 +381,7 @@ header .header-content .header-content-inner p {
         font-size: 18px;
     }
 }
+
 
 .section-heading {
     margin-top: 0;
@@ -635,6 +675,14 @@ body {
     text-align: center;
 }
 
+.fieldparte10{
+    text-align: center;
+}
+
+.fieldparte11{
+    text-align: center;
+}
+
 .variableparte2{
     display: inline-block !important;
     vertical-align: middle;
@@ -679,6 +727,7 @@ body {
     display: inline-block !important;
     vertical-align: middle;
 }
+
 
 .introductionquestion {
     text-align: center;
