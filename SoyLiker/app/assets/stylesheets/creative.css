@@ -27,6 +27,22 @@ hr.largo {
     border-width: 1px;
 }
 
+hr.largo-left {
+    max-width: 100%;
+    border-color: #00F5E5;
+    border-width: 3px;
+    text-align: left;
+    margin-left: 0px;
+}
+
+hr.largo-right {
+    max-width: 100%;
+    border-color: #00F5E5;
+    border-width: 3px;
+    text-align: right;
+    margin-right: 0px;
+}
+
 hr.light {
     border-color: #fff;
 }
@@ -59,6 +75,12 @@ p {
 }
 
 
+.logo
+{   
+
+    width: 200px;
+}
+
 .drop-t {
     padding: 5px;
     font-size: 12px;
@@ -73,45 +95,12 @@ p {
     padding: 0px;
     color:rgba(230, 230, 230, 0.5);
     text-align: center;
+    font-size: 10px;
 }
 
-.finlikeucolombia p{
-    top: 17px; right: 631px; width: 300px; position: absolute;
-    line-height: 1.4em; text-align: right;
-}
 
-.finlikeumexico p {
-    top: 17px; left: 631px; width: 300px; position: absolute;
-    line-height: 1.4em; text-align: left;
-}
 
-.finlikeucorreo1{
-    text-decoration:underline;
-    text-align: left;
-}
 
-.finlikeucorreo2{
-    text-decoration:underline;
-    text-align: right;
-}
-
-.finlikeu1 span{
-    text-align: left; 
-    line-height: 1.4em;
-}
-
-.finlikeu2 span{
-    text-align: right;
-    line-height: 1.4em;
-}
-
-.finloquehacemos{
-    text-align: center
-}
-
-.fincomolohacemos{
-    text-align: center
-}
 
 .seccion-suave
 {
@@ -139,17 +128,37 @@ p {
 .bg-dark-sm {
     color: #fff;
     background-color: #222;
-     max-height: 60px;
+     
      padding-top: 30px;
-     padding-bottom: 160px;
+     padding-bottom: 20px;
 
 }
+
+
 
 .img-1
 {
     background-image: url(port_1.jpg);
 }
 
+.no-bottom
+{
+    padding-bottom: 0px;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+.aside-sub
+{
+    background-color: rgba(0,128,255,0.3);
+    margin:3%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 1%;
+    color:white;
+}
 .text-faded {
     color: rgba(255,255,255,.7);
 }
@@ -181,6 +190,10 @@ aside {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     color: #f05f40;
+}
+
+.navbar-default .navbar-header .navbar-brand > img {
+    width: 20px;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -217,6 +230,18 @@ aside {
 }
 
 @media(min-width:768px) {
+
+    .movil-desaparece
+    {
+    visibility: hidden;
+    }
+
+    .logo
+    {
+        margin-top: 100px;
+    width: 220px;
+    }
+
     .navbar-default {
         border-color: rgba(255,255,255,.3);
         background-color: transparent;
@@ -401,6 +426,12 @@ header .header-content .header-content-inner p {
 }
 
 @media(min-width:992px) {
+
+    .logo
+    {
+        margin-top: 0px;
+    width: 260px;
+    }
     .service-box {
         margin: 20px auto 0;
     }
@@ -624,7 +655,6 @@ img::-moz-selection {
 }
 
 
-
 body {
     webkit-tap-highlight-color: #222;
 }
@@ -750,6 +780,11 @@ border-color: #00F5E5;
 
     text-align: center;
     text-decoration: overline;  
+}
+
+.contacto
+{
+    font-size: 11px;
 }
 
 /*Campo teléfono en formulario*/
